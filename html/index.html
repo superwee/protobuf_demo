@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>websocket</title>
+	<script src="../js/protobuf/Long.js"></script>
+	<script src="../js/protobuf/ByteBufferAB.min.js"></script>
+	<script src="../js/protobuf/ProtoBuf.min.js"></script>
+	<script src="../js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<form>
+	<input type="text" name="" id="content">
+	<button type="button" id="send">发送</button>
+</form>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	var ProtoBuf = dcodeIO.ProtoBuf;
+	var url = 'ws://192.168.13.128:1235';
+	var ws = new WebSocket(url);
+	ws.onopen = function () {
+		console.log('connect success');
+	};
+	ws.onmessage = function (evt) {
+		decodeMessage(evt);
+	};
+	ws.onerror = function (evt) {
+		console.log(evt);
+	};
+	ws.onclose = function () {
+		console.log('disconnect');
+	};
+	function load_proto($file)
+	{
+		return ProtoBuf.loadProtoFile($file);
+	}
+
+	function buildMessage(content)
+	{
+		var Message = load_proto('./proto_js/message.proto').build('Message');
+		var message = new Message({user_code:'test',user_name:'test',content:content,to_user:'test1'});
+		return message.toArrayBuffer();
+	}
+
+	function buildRequest(body)
+	{
+		var Request = load_proto('./proto_js/request.proto').build('Request');
+		var request = new Request({path:'test/index', body:body});
+		return request.toArrayBuffer();
+	}
+
+	//解析消息
+	function decodeMessage(evt)
+	{
+		var data = evt.data;
+		var Response = load_proto('./proto_js/response.proto').build('Response');
+		var response = Response.decode(data);
+		console.log(response);
+	}
+
+	//发送消息
+	$('#send').on('click', function () {
+		var content = $('#content').val();
+		var message = buildMessage(content);
+		var request = buildRequest(message);
+		ws.send(request);
+	});
+
+});
+</script>
+</html>

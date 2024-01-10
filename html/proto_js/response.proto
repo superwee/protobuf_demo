@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Response {
+	required int32 code = 1;
+	required string data = 2; 
+	optional string extra = 3;
+}

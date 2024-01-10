@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message Request {
+	required string path = 1;
+	required bytes body = 2; 
+}

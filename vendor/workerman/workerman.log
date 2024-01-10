@@ -1,0 +1,1879 @@
+2023-12-19 02:25:28 pid:1882 Workerman[start.php] start in DEBUG mode
+2023-12-19 03:08:33 pid:1882 Workerman[start.php] stopping ...
+2023-12-19 03:08:33 pid:1882 Workerman[start.php] has been stopped
+2023-12-19 03:08:34 pid:1946 Workerman[start.php] start in DEBUG mode
+2023-12-19 03:13:01 pid:1946 Workerman[start.php] stopping ...
+2023-12-19 03:13:01 pid:1946 Workerman[start.php] has been stopped
+2023-12-19 03:13:10 pid:1949 Workerman[start.php] start in DEBUG mode
+2023-12-19 03:18:40 pid:1949 Workerman[start.php] stopping ...
+2023-12-19 03:18:40 pid:1949 Workerman[start.php] has been stopped
+2023-12-19 03:18:54 pid:1953 Workerman[start.php] start in DEBUG mode
+2023-12-19 03:22:55 pid:1953 Workerman[start.php] stopping ...
+2023-12-19 03:22:55 pid:1953 Workerman[start.php] has been stopped
+2023-12-19 03:22:56 pid:1956 Workerman[start.php] start in DEBUG mode
+2023-12-19 06:32:55 pid:1956 Workerman[start.php] stopping ...
+2023-12-19 06:32:55 pid:1956 Workerman[start.php] has been stopped
+2023-12-19 06:32:56 pid:6491 Workerman[start.php] start in DEBUG mode
+2023-12-19 07:23:49 pid:6491 Workerman[start.php] stopping ...
+2023-12-19 07:23:49 pid:6491 Workerman[start.php] has been stopped
+2023-12-20 05:44:29 pid:13109 Workerman[start.php] start in DEBUG mode
+2023-12-20 08:14:09 pid:13110 InvalidArgumentException: Message constructor must be an array or null. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:59
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Api.php(128): Google\Protobuf\Internal\Message->__construct()
+#1 /home/work/code/start.php(17): Google\Protobuf\Api->__construct()
+#2 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#4 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#9 /home/work/code/start.php(24): Workerman\Worker::runAll()
+#10 {main}
+2023-12-20 08:14:09 pid:13109 worker[none:13110] exit with status 64000
+2023-12-20 08:15:03 pid:13109 Workerman[start.php] stopping ...
+2023-12-20 08:15:03 pid:13109 Workerman[start.php] has been stopped
+2023-12-20 08:15:04 pid:13215 Workerman[start.php] start in DEBUG mode
+2023-12-20 09:35:13 pid:13215 Workerman[start.php] stopping ...
+2023-12-20 09:35:13 pid:13215 Workerman[start.php] has been stopped
+2023-12-22 02:41:22 pid:1844 Workerman[start.php] start in DEBUG mode
+2023-12-22 02:42:20 pid:1846 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(18): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#11 /home/work/code/start.php(24): Workerman\Worker::runAll()
+#12 {main}
+2023-12-22 02:42:20 pid:1844 worker[none:1846] exit with status 64000
+2023-12-22 04:42:37 pid:1844 Workerman[start.php] stopping ...
+2023-12-22 04:42:37 pid:1844 Workerman[start.php] has been stopped
+2024-01-02 08:47:21 pid:1892 Workerman[start.php] start in DEBUG mode
+2024-01-02 09:09:50 pid:1892 Workerman[start.php] stopping ...
+2024-01-02 09:09:50 pid:1892 Workerman[start.php] has been stopped
+2024-01-02 09:09:51 pid:2095 Workerman[start.php] start in DEBUG mode
+2024-01-02 09:15:01 pid:2095 Workerman[start.php] stopping ...
+2024-01-02 09:15:01 pid:2095 Workerman[start.php] has been stopped
+2024-01-02 09:15:03 pid:2098 Workerman[start.php] start in DEBUG mode
+2024-01-02 09:15:32 pid:2098 Workerman[start.php] stopping ...
+2024-01-02 09:15:32 pid:2098 Workerman[start.php] has been stopped
+2024-01-03 01:34:34 pid:1709 Workerman[start.php] start in DEBUG mode
+2024-01-03 07:09:31 pid:2052 Workerman[http.php] start in DEBUG mode
+2024-01-03 07:09:32 pid:2053 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#5 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#6 {main}
+2024-01-03 07:09:32 pid:2052 worker[none:2053] exit with status 64000
+2024-01-03 07:09:33 pid:2054 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:09:33 pid:2052 worker[none:2054] exit with status 64000
+2024-01-03 07:09:34 pid:2055 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:09:34 pid:2052 worker[none:2055] exit with status 64000
+2024-01-03 07:09:35 pid:2056 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:09:35 pid:2052 worker[none:2056] exit with status 64000
+2024-01-03 07:09:36 pid:2057 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:09:36 pid:2052 worker[none:2057] exit with status 64000
+2024-01-03 07:09:37 pid:2058 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:09:37 pid:2052 worker[none:2058] exit with status 64000
+2024-01-03 07:09:38 pid:2059 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:09:38 pid:2052 worker[none:2059] exit with status 64000
+2024-01-03 07:09:39 pid:2060 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:09:39 pid:2052 worker[none:2060] exit with status 64000
+2024-01-03 07:09:40 pid:2061 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:09:40 pid:2052 worker[none:2061] exit with status 64000
+2024-01-03 07:09:40 pid:2052 Workerman[http.php] stopping ...
+2024-01-03 07:09:40 pid:2062 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:09:40 pid:2052 worker[none:2062] exit with status 64000
+2024-01-03 07:09:40 pid:2052 Workerman[http.php] has been stopped
+2024-01-03 07:14:59 pid:4229 Workerman[http.php] start in DEBUG mode
+2024-01-03 07:15:00 pid:4230 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#5 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#6 {main}
+2024-01-03 07:15:00 pid:4229 worker[none:4230] exit with status 64000
+2024-01-03 07:15:01 pid:4231 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:15:01 pid:4229 worker[none:4231] exit with status 64000
+2024-01-03 07:15:02 pid:4229 Workerman[http.php] stopping ...
+2024-01-03 07:15:02 pid:4232 Error: Class 'Workerman\MySQL\Connection' not found in /home/work/code/http.php:16
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#1 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#2 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 07:15:02 pid:4229 worker[none:4232] exit with status 64000
+2024-01-03 07:15:02 pid:4229 Workerman[http.php] has been stopped
+2024-01-03 07:18:48 pid:4315 Workerman[http.php] start in DEBUG mode
+2024-01-03 07:18:49 pid:4316 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 07:18:49 pid:4315 worker[none:4316] exit with status 64000
+2024-01-03 07:18:50 pid:4317 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:18:50 pid:4315 worker[none:4317] exit with status 64000
+2024-01-03 07:18:51 pid:4318 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:18:51 pid:4315 worker[none:4318] exit with status 64000
+2024-01-03 07:18:51 pid:4315 Workerman[http.php] stopping ...
+2024-01-03 07:18:51 pid:4319 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:18:51 pid:4315 worker[none:4319] exit with status 64000
+2024-01-03 07:18:51 pid:4315 Workerman[http.php] has been stopped
+2024-01-03 07:28:27 pid:4322 Workerman[http.php] start in DEBUG mode
+2024-01-03 07:28:28 pid:4323 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 07:28:28 pid:4322 worker[none:4323] exit with status 64000
+2024-01-03 07:28:29 pid:4324 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:28:29 pid:4322 worker[none:4324] exit with status 64000
+2024-01-03 07:28:30 pid:4325 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:28:30 pid:4322 worker[none:4325] exit with status 64000
+2024-01-03 07:28:30 pid:4322 Workerman[http.php] stopping ...
+2024-01-03 07:28:30 pid:4326 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:28:30 pid:4322 worker[none:4326] exit with status 64000
+2024-01-03 07:28:30 pid:4322 Workerman[http.php] has been stopped
+2024-01-03 07:31:21 pid:4330 Workerman[http.php] start in DEBUG mode
+2024-01-03 07:31:22 pid:4331 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 07:31:22 pid:4330 worker[none:4331] exit with status 64000
+2024-01-03 07:31:23 pid:4332 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:31:23 pid:4330 worker[none:4332] exit with status 64000
+2024-01-03 07:31:24 pid:4330 Workerman[http.php] stopping ...
+2024-01-03 07:31:24 pid:4333 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:31:24 pid:4330 worker[none:4333] exit with status 64000
+2024-01-03 07:31:24 pid:4330 Workerman[http.php] has been stopped
+2024-01-03 07:36:32 pid:4337 Workerman[http.php] start in DEBUG mode
+2024-01-03 07:36:33 pid:4338 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 07:36:33 pid:4337 worker[none:4338] exit with status 64000
+2024-01-03 07:36:34 pid:4339 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:36:34 pid:4337 worker[none:4339] exit with status 64000
+2024-01-03 07:36:35 pid:4340 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:36:35 pid:4337 worker[none:4340] exit with status 64000
+2024-01-03 07:36:36 pid:4337 Workerman[http.php] stopping ...
+2024-01-03 07:36:36 pid:4341 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:36:36 pid:4337 worker[none:4341] exit with status 64000
+2024-01-03 07:36:36 pid:4337 Workerman[http.php] has been stopped
+2024-01-03 07:37:30 pid:4360 Workerman[http.php] start in DEBUG mode
+2024-01-03 07:37:31 pid:4361 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 07:37:31 pid:4360 worker[none:4361] exit with status 64000
+2024-01-03 07:37:32 pid:4362 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:37:32 pid:4360 worker[none:4362] exit with status 64000
+2024-01-03 07:37:33 pid:4363 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:37:33 pid:4360 worker[none:4363] exit with status 64000
+2024-01-03 07:37:34 pid:4360 Workerman[http.php] stopping ...
+2024-01-03 07:37:34 pid:4364 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:37:34 pid:4360 worker[none:4364] exit with status 64000
+2024-01-03 07:37:34 pid:4360 Workerman[http.php] has been stopped
+2024-01-03 07:38:32 pid:4377 Workerman[http.php] start in DEBUG mode
+2024-01-03 07:38:33 pid:4378 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 07:38:33 pid:4377 worker[none:4378] exit with status 64000
+2024-01-03 07:38:34 pid:4379 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:38:34 pid:4377 worker[none:4379] exit with status 64000
+2024-01-03 07:38:35 pid:4377 Workerman[http.php] stopping ...
+2024-01-03 07:38:35 pid:4380 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:38:35 pid:4377 worker[none:4380] exit with status 64000
+2024-01-03 07:38:35 pid:4377 Workerman[http.php] has been stopped
+2024-01-03 07:50:44 pid:4396 Workerman[http.php] start in DEBUG mode
+2024-01-03 07:50:45 pid:4397 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 07:50:45 pid:4396 worker[none:4397] exit with status 64000
+2024-01-03 07:50:46 pid:4398 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:50:46 pid:4396 worker[none:4398] exit with status 64000
+2024-01-03 07:50:47 pid:4396 Workerman[http.php] stopping ...
+2024-01-03 07:50:47 pid:4399 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 07:50:47 pid:4396 worker[none:4399] exit with status 64000
+2024-01-03 07:50:47 pid:4396 Workerman[http.php] has been stopped
+2024-01-03 08:01:46 pid:4416 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:01:47 pid:4417 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 08:01:47 pid:4416 worker[none:4417] exit with status 64000
+2024-01-03 08:01:48 pid:4418 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 08:01:48 pid:4416 worker[none:4418] exit with status 64000
+2024-01-03 08:01:48 pid:4416 Workerman[http.php] stopping ...
+2024-01-03 08:01:48 pid:4419 PDOException: SQLSTATE[HY000] [1130] Host 'DESKTOP-MKIJAER' is not allowed to connect to this MySQL server in /home/work/code/vendor/workerman/mysql/src/Connection.php:1708
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1708): PDO->__construct()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 /home/work/code/http.php(16): Workerman\MySQL\Connection->__construct()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(2494): {closure}()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1633): Workerman\Worker->run()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 08:01:48 pid:4416 worker[none:4419] exit with status 64000
+2024-01-03 08:01:48 pid:4416 Workerman[http.php] has been stopped
+2024-01-03 08:26:09 pid:4426 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:26:43 pid:4426 Workerman[http.php] stopping ...
+2024-01-03 08:26:43 pid:4426 Workerman[http.php] has been stopped
+2024-01-03 08:32:56 pid:4429 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:33:19 pid:4430 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 08:33:19 pid:4429 worker[none:4430] exit with status 64000
+2024-01-03 08:33:38 pid:4431 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:38 pid:4429 worker[none:4431] exit with status 64000
+2024-01-03 08:33:38 pid:4432 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:38 pid:4429 worker[none:4432] exit with status 64000
+2024-01-03 08:33:38 pid:4433 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:38 pid:4429 worker[none:4433] exit with status 64000
+2024-01-03 08:33:39 pid:4434 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:39 pid:4429 worker[none:4434] exit with status 64000
+2024-01-03 08:33:39 pid:4435 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:39 pid:4429 worker[none:4435] exit with status 64000
+2024-01-03 08:33:43 pid:4436 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:43 pid:4429 worker[none:4436] exit with status 64000
+2024-01-03 08:33:43 pid:4437 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:43 pid:4429 worker[none:4437] exit with status 64000
+2024-01-03 08:33:43 pid:4438 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:43 pid:4429 worker[none:4438] exit with status 64000
+2024-01-03 08:33:47 pid:4439 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:47 pid:4429 worker[none:4439] exit with status 64000
+2024-01-03 08:33:47 pid:4440 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:47 pid:4429 worker[none:4440] exit with status 64000
+2024-01-03 08:33:52 pid:4441 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:52 pid:4429 worker[none:4441] exit with status 64000
+2024-01-03 08:33:52 pid:4442 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:33:52 pid:4429 worker[none:4442] exit with status 64000
+2024-01-03 08:34:22 pid:4443 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:34:22 pid:4429 worker[none:4443] exit with status 64000
+2024-01-03 08:34:22 pid:4444 Error: Call to protected method Application::handle() from context '' in /home/work/code/http.php:22
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:34:22 pid:4429 worker[none:4444] exit with status 64000
+2024-01-03 08:34:54 pid:4429 Workerman[http.php] stopping ...
+2024-01-03 08:34:54 pid:4429 Workerman[http.php] has been stopped
+2024-01-03 08:34:54 pid:4446 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:34:58 pid:4447 Error: Call to a member function send() on null in /home/work/code/http.php:25
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#7 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#8 {main}
+2024-01-03 08:34:58 pid:4446 worker[none:4447] exit with status 64000
+2024-01-03 08:34:58 pid:4448 Error: Call to a member function send() on null in /home/work/code/http.php:25
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/http.php(29): Workerman\Worker::runAll()
+#10 {main}
+2024-01-03 08:34:58 pid:4446 worker[none:4448] exit with status 64000
+2024-01-03 08:35:18 pid:4446 Workerman[http.php] stopping ...
+2024-01-03 08:35:18 pid:4446 Workerman[http.php] has been stopped
+2024-01-03 08:35:18 pid:4450 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:36:23 pid:4450 Workerman[http.php] stopping ...
+2024-01-03 08:36:23 pid:4450 Workerman[http.php] has been stopped
+2024-01-03 08:36:24 pid:4453 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:36:50 pid:4453 Workerman[http.php] stopping ...
+2024-01-03 08:36:50 pid:4453 Workerman[http.php] has been stopped
+2024-01-03 08:36:51 pid:4455 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:37:24 pid:4455 Workerman[http.php] stopping ...
+2024-01-03 08:37:24 pid:4455 Workerman[http.php] has been stopped
+2024-01-03 08:37:25 pid:4457 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:37:28 pid:4458 Error: Call to undefined function call_user_method_array() in /home/work/code/app/http/Application.php:29
+Stack trace:
+#0 /home/work/code/http.php(22): Application->handle()
+#1 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#3 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(32): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 08:37:28 pid:4457 worker[none:4458] exit with status 64000
+2024-01-03 08:37:53 pid:4457 Workerman[http.php] stopping ...
+2024-01-03 08:37:53 pid:4457 Workerman[http.php] has been stopped
+2024-01-03 08:37:54 pid:4460 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:37:56 pid:4461 Error: Call to undefined function call_user_method_array() in /home/work/code/app/http/Application.php:29
+Stack trace:
+#0 /home/work/code/http.php(22): Application->handle()
+#1 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#3 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(32): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 08:37:56 pid:4460 worker[none:4461] exit with status 64000
+2024-01-03 08:38:31 pid:4460 Workerman[http.php] stopping ...
+2024-01-03 08:38:31 pid:4460 Workerman[http.php] has been stopped
+2024-01-03 08:38:31 pid:4463 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:38:33 pid:4464 Error: Call to undefined function call_user_method_array() in /home/work/code/app/http/Application.php:29
+Stack trace:
+#0 /home/work/code/http.php(22): Application->handle()
+#1 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#3 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/code/http.php(32): Workerman\Worker::runAll()
+#9 {main}
+2024-01-03 08:38:33 pid:4463 worker[none:4464] exit with status 64000
+2024-01-03 08:39:54 pid:4463 Workerman[http.php] stopping ...
+2024-01-03 08:39:54 pid:4463 Workerman[http.php] has been stopped
+2024-01-03 08:39:54 pid:4487 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:40:34 pid:4487 Workerman[http.php] stopping ...
+2024-01-03 08:40:34 pid:4487 Workerman[http.php] has been stopped
+2024-01-03 08:40:35 pid:4489 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:41:17 pid:4489 Workerman[http.php] stopping ...
+2024-01-03 08:41:17 pid:4489 Workerman[http.php] has been stopped
+2024-01-03 08:41:18 pid:4492 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:45:11 pid:4492 Workerman[http.php] stopping ...
+2024-01-03 08:45:11 pid:4492 Workerman[http.php] has been stopped
+2024-01-03 08:45:12 pid:4494 Workerman[http.php] start in DEBUG mode
+2024-01-03 08:46:30 pid:4494 Workerman[http.php] stopping ...
+2024-01-03 08:46:30 pid:4494 Workerman[http.php] has been stopped
+2024-01-03 08:46:31 pid:4496 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:04:22 pid:4496 Workerman[http.php] stopping ...
+2024-01-03 09:04:22 pid:4496 Workerman[http.php] has been stopped
+2024-01-03 09:04:23 pid:4513 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:05:22 pid:4513 Workerman[http.php] stopping ...
+2024-01-03 09:05:22 pid:4513 Workerman[http.php] has been stopped
+2024-01-03 09:05:23 pid:4515 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:07:08 pid:4521 Workerman[test.php] start in DEBUG mode
+2024-01-03 09:08:08 pid:4521 Workerman[test.php] stopping ...
+2024-01-03 09:08:08 pid:4521 Workerman[test.php] has been stopped
+2024-01-03 09:08:08 pid:4523 Workerman[test.php] start in DEBUG mode
+2024-01-03 09:09:55 pid:4523 Workerman[test.php] stopping ...
+2024-01-03 09:09:55 pid:4523 Workerman[test.php] has been stopped
+2024-01-03 09:09:56 pid:4526 Workerman[test.php] start in DEBUG mode
+2024-01-03 09:10:40 pid:4526 Workerman[test.php] stopping ...
+2024-01-03 09:10:40 pid:4526 Workerman[test.php] has been stopped
+2024-01-03 09:10:40 pid:4528 Workerman[test.php] start in DEBUG mode
+2024-01-03 09:18:12 pid:4515 Workerman[http.php] stopping ...
+2024-01-03 09:18:12 pid:4515 Workerman[http.php] has been stopped
+2024-01-03 09:18:13 pid:4531 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:18:15 pid:4532 ArgumentCountError: Too few arguments to function Workerman\MySQL\Connection::bindValue(), 1 passed in /home/work/code/app/http/controller/Regist.php on line 17 and exactly 2 expected in /home/work/code/vendor/workerman/mysql/src/Connection.php:1096
+Stack trace:
+#0 /home/work/code/app/http/controller/Regist.php(17): Workerman\MySQL\Connection->bindValue()
+#1 /home/work/code/app/http/Application.php(28): Regist->index()
+#2 /home/work/code/http.php(25): Application->handle()
+#3 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#5 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#10 /home/work/code/http.php(37): Workerman\Worker::runAll()
+#11 {main}
+2024-01-03 09:18:15 pid:4531 worker[none:4532] exit with status 64000
+2024-01-03 09:18:15 pid:4533 ArgumentCountError: Too few arguments to function Workerman\MySQL\Connection::bindValue(), 1 passed in /home/work/code/app/http/controller/Regist.php on line 17 and exactly 2 expected in /home/work/code/vendor/workerman/mysql/src/Connection.php:1096
+Stack trace:
+#0 /home/work/code/app/http/controller/Regist.php(17): Workerman\MySQL\Connection->bindValue()
+#1 /home/work/code/app/http/Application.php(28): Regist->index()
+#2 /home/work/code/http.php(25): Application->handle()
+#3 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#5 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#12 /home/work/code/http.php(37): Workerman\Worker::runAll()
+#13 {main}
+2024-01-03 09:18:15 pid:4531 worker[none:4533] exit with status 64000
+2024-01-03 09:18:15 pid:4534 ArgumentCountError: Too few arguments to function Workerman\MySQL\Connection::bindValue(), 1 passed in /home/work/code/app/http/controller/Regist.php on line 17 and exactly 2 expected in /home/work/code/vendor/workerman/mysql/src/Connection.php:1096
+Stack trace:
+#0 /home/work/code/app/http/controller/Regist.php(17): Workerman\MySQL\Connection->bindValue()
+#1 /home/work/code/app/http/Application.php(28): Regist->index()
+#2 /home/work/code/http.php(25): Application->handle()
+#3 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#5 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#12 /home/work/code/http.php(37): Workerman\Worker::runAll()
+#13 {main}
+2024-01-03 09:18:15 pid:4531 worker[none:4534] exit with status 64000
+2024-01-03 09:18:19 pid:4535 ArgumentCountError: Too few arguments to function Workerman\MySQL\Connection::bindValue(), 1 passed in /home/work/code/app/http/controller/Regist.php on line 17 and exactly 2 expected in /home/work/code/vendor/workerman/mysql/src/Connection.php:1096
+Stack trace:
+#0 /home/work/code/app/http/controller/Regist.php(17): Workerman\MySQL\Connection->bindValue()
+#1 /home/work/code/app/http/Application.php(28): Regist->index()
+#2 /home/work/code/http.php(25): Application->handle()
+#3 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#5 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#12 /home/work/code/http.php(37): Workerman\Worker::runAll()
+#13 {main}
+2024-01-03 09:18:19 pid:4531 worker[none:4535] exit with status 64000
+2024-01-03 09:18:52 pid:4531 Workerman[http.php] stopping ...
+2024-01-03 09:18:52 pid:4531 Workerman[http.php] has been stopped
+2024-01-03 09:19:30 pid:4540 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:28:04 pid:4540 Workerman[http.php] stopping ...
+2024-01-03 09:28:04 pid:4540 Workerman[http.php] has been stopped
+2024-01-03 09:28:04 pid:4543 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:29:56 pid:4543 Workerman[http.php] stopping ...
+2024-01-03 09:29:56 pid:4543 Workerman[http.php] has been stopped
+2024-01-03 09:29:57 pid:4545 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:30:56 pid:4545 Workerman[http.php] stopping ...
+2024-01-03 09:30:56 pid:4545 Workerman[http.php] has been stopped
+2024-01-03 09:30:57 pid:4548 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:31:31 pid:4548 Workerman[http.php] stopping ...
+2024-01-03 09:31:31 pid:4548 Workerman[http.php] has been stopped
+2024-01-03 09:31:31 pid:4550 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:32:08 pid:4550 Workerman[http.php] stopping ...
+2024-01-03 09:32:08 pid:4550 Workerman[http.php] has been stopped
+2024-01-03 09:32:09 pid:4552 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:33:18 pid:4552 Workerman[http.php] stopping ...
+2024-01-03 09:33:18 pid:4552 Workerman[http.php] has been stopped
+2024-01-03 09:33:19 pid:4554 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:36:24 pid:4554 Workerman[http.php] stopping ...
+2024-01-03 09:36:24 pid:4554 Workerman[http.php] has been stopped
+2024-01-03 09:36:25 pid:4557 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:47:04 pid:4557 Workerman[http.php] stopping ...
+2024-01-03 09:47:04 pid:4557 Workerman[http.php] has been stopped
+2024-01-03 09:47:04 pid:4564 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:47:46 pid:4564 Workerman[http.php] stopping ...
+2024-01-03 09:47:46 pid:4564 Workerman[http.php] has been stopped
+2024-01-03 09:47:47 pid:4566 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:48:51 pid:4566 Workerman[http.php] stopping ...
+2024-01-03 09:48:51 pid:4566 Workerman[http.php] has been stopped
+2024-01-03 09:48:52 pid:4568 Workerman[http.php] start in DEBUG mode
+2024-01-03 09:49:26 pid:4568 Workerman[http.php] stopping ...
+2024-01-03 09:49:26 pid:4568 Workerman[http.php] has been stopped
+2024-01-03 09:49:26 pid:4570 Workerman[http.php] start in DEBUG mode
+2024-01-08 05:52:30 pid:1851 Workerman[http.php] start in DEBUG mode
+2024-01-08 05:54:49 pid:1851 Workerman[http.php] stopping ...
+2024-01-08 05:54:49 pid:1851 Workerman[http.php] has been stopped
+2024-01-08 05:54:50 pid:1853 Workerman[http.php] start in DEBUG mode
+2024-01-08 05:59:04 pid:1853 Workerman[http.php] stopping ...
+2024-01-08 05:59:04 pid:1853 Workerman[http.php] has been stopped
+2024-01-08 05:59:05 pid:1910 Workerman[http.php] start in DEBUG mode
+2024-01-08 05:59:42 pid:1910 Workerman[http.php] stopping ...
+2024-01-08 05:59:42 pid:1910 Workerman[http.php] has been stopped
+2024-01-08 06:00:08 pid:1913 Workerman[http.php] start in DEBUG mode
+2024-01-08 07:08:42 pid:1913 Workerman[http.php] stopping ...
+2024-01-08 07:08:42 pid:1913 Workerman[http.php] has been stopped
+2024-01-08 07:08:43 pid:1954 Workerman[http.php] start in DEBUG mode
+2024-01-08 07:08:46 pid:1955 PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/work/code/vendor/workerman/mysql/src/Connection.php:1737
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1737): PDOStatement->bindParam()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(51): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->login()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#13 {main}
+2024-01-08 07:08:46 pid:1954 worker[none:1955] exit with status 64000
+2024-01-08 07:08:46 pid:1956 PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/work/code/vendor/workerman/mysql/src/Connection.php:1737
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1737): PDOStatement->bindParam()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(51): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->login()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#15 {main}
+2024-01-08 07:08:46 pid:1954 worker[none:1956] exit with status 64000
+2024-01-08 07:17:12 pid:1957 PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/work/code/vendor/workerman/mysql/src/Connection.php:1753
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1753): PDOStatement->bindParam()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(51): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->login()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#15 {main}
+2024-01-08 07:17:12 pid:1954 worker[none:1957] exit with status 64000
+2024-01-08 07:17:12 pid:1959 PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/work/code/vendor/workerman/mysql/src/Connection.php:1737
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1737): PDOStatement->bindParam()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(51): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->login()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#15 {main}
+2024-01-08 07:17:12 pid:1954 worker[none:1959] exit with status 64000
+2024-01-08 07:17:18 pid:1960 PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/work/code/vendor/workerman/mysql/src/Connection.php:1737
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1737): PDOStatement->bindParam()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(51): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->login()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#15 {main}
+2024-01-08 07:17:18 pid:1954 worker[none:1960] exit with status 64000
+2024-01-08 07:17:18 pid:1961 PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/work/code/vendor/workerman/mysql/src/Connection.php:1737
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1737): PDOStatement->bindParam()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(51): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->login()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#15 {main}
+2024-01-08 07:17:18 pid:1954 worker[none:1961] exit with status 64000
+2024-01-08 07:17:25 pid:1954 Workerman[http.php] stopping ...
+2024-01-08 07:17:25 pid:1954 Workerman[http.php] has been stopped
+2024-01-08 07:17:26 pid:1963 Workerman[http.php] start in DEBUG mode
+2024-01-08 07:19:05 pid:1963 Workerman[http.php] stopping ...
+2024-01-08 07:19:05 pid:1963 Workerman[http.php] has been stopped
+2024-01-08 07:19:05 pid:1965 Workerman[http.php] start in DEBUG mode
+2024-01-08 07:29:24 pid:1965 Workerman[http.php] stopping ...
+2024-01-08 07:29:24 pid:1965 Workerman[http.php] has been stopped
+2024-01-08 07:29:25 pid:1981 Workerman[http.php] start in DEBUG mode
+2024-01-08 08:14:38 pid:1981 Workerman[http.php] stopping ...
+2024-01-08 08:14:38 pid:1981 Workerman[http.php] has been stopped
+2024-01-08 08:14:39 pid:2004 Workerman[http.php] start in DEBUG mode
+2024-01-08 08:20:10 pid:2013 Workerman[start.php] start in DEBUG mode
+2024-01-08 08:21:49 pid:2013 Workerman[start.php] stopping ...
+2024-01-08 08:21:49 pid:2013 Workerman[start.php] has been stopped
+2024-01-08 08:21:52 pid:2015 Workerman[start.php] start in DEBUG mode
+2024-01-08 09:38:54 pid:2015 Workerman[start.php] stopping ...
+2024-01-08 09:38:54 pid:2015 Workerman[start.php] has been stopped
+2024-01-08 09:38:55 pid:2099 Workerman[start.php] start in DEBUG mode
+2024-01-08 10:15:52 pid:2099 Workerman[start.php] stopping ...
+2024-01-08 10:15:52 pid:2099 Workerman[start.php] has been stopped
+2024-01-08 10:15:52 pid:2119 Workerman[start.php] start in DEBUG mode
+2024-01-08 10:16:54 pid:2119 Workerman[start.php] stopping ...
+2024-01-08 10:16:54 pid:2119 Workerman[start.php] has been stopped
+2024-01-08 10:16:58 pid:2122 Workerman[start.php] start in DEBUG mode
+2024-01-08 10:17:42 pid:2122 Workerman[start.php] stopping ...
+2024-01-08 10:17:42 pid:2122 Workerman[start.php] has been stopped
+2024-01-08 10:17:43 pid:2125 Workerman[start.php] start in DEBUG mode
+2024-01-08 10:21:52 pid:2125 Workerman[start.php] stopping ...
+2024-01-08 10:21:52 pid:2125 Workerman[start.php] has been stopped
+2024-01-08 10:21:54 pid:2004 Workerman[http.php] stopping ...
+2024-01-08 10:21:54 pid:2004 Workerman[http.php] has been stopped
+2024-01-09 01:08:23 pid:1762 Workerman[start.php] start in DEBUG mode
+2024-01-09 01:10:34 pid:1762 Workerman[start.php] stopping ...
+2024-01-09 01:10:34 pid:1762 Workerman[start.php] has been stopped
+2024-01-09 01:11:04 pid:1765 Workerman[start.php] start in DEBUG mode
+2024-01-09 01:11:14 pid:1765 Workerman[start.php] stopping ...
+2024-01-09 01:11:14 pid:1765 Workerman[start.php] has been stopped
+2024-01-09 01:12:22 pid:1768 Workerman[start.php] start in DEBUG mode
+2024-01-09 01:12:26 pid:1768 Workerman[start.php] stopping ...
+2024-01-09 01:12:26 pid:1768 Workerman[start.php] has been stopped
+2024-01-09 01:12:42 pid:1770 Workerman[start.php] start in DEBUG mode
+2024-01-09 01:12:46 pid:1770 Workerman[start.php] stopping ...
+2024-01-09 01:12:46 pid:1770 Workerman[start.php] has been stopped
+2024-01-09 01:16:10 pid:1774 Workerman[start.php] start in DEBUG mode
+2024-01-09 01:16:36 pid:1774 Workerman[start.php] stopping ...
+2024-01-09 01:16:36 pid:1774 Workerman[start.php] has been stopped
+2024-01-09 01:16:41 pid:1776 Workerman[start.php] start in DEBUG mode
+2024-01-09 01:23:52 pid:1776 Workerman[start.php] stopping ...
+2024-01-09 01:23:52 pid:1776 Workerman[start.php] has been stopped
+2024-01-09 01:23:52 pid:1780 Workerman[start.php] start in DEBUG mode
+2024-01-09 01:24:29 pid:1780 Workerman[start.php] stopping ...
+2024-01-09 01:24:30 pid:1780 Workerman[start.php] has been stopped
+2024-01-09 01:24:30 pid:1782 Workerman[start.php] start in DEBUG mode
+2024-01-09 01:24:37 pid:1783 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected EOF inside fixed32. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:313
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(22): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#11 /home/work/code/start.php(56): Workerman\Worker::runAll()
+#12 {main}
+2024-01-09 01:24:37 pid:1782 worker[none:1783] exit with status 64000
+2024-01-09 01:24:59 pid:1782 Workerman[start.php] stopping ...
+2024-01-09 01:24:59 pid:1782 Workerman[start.php] has been stopped
+2024-01-09 01:25:00 pid:1785 Workerman[start.php] start in DEBUG mode
+2024-01-09 02:20:50 pid:1859 Workerman[http.php] start in DEBUG mode
+2024-01-09 02:32:32 pid:1785 Workerman[start.php] stopping ...
+2024-01-09 02:32:32 pid:1785 Workerman[start.php] has been stopped
+2024-01-09 02:32:33 pid:1863 Workerman[start.php] start in DEBUG mode
+2024-01-09 02:36:59 pid:1863 Workerman[start.php] stopping ...
+2024-01-09 02:36:59 pid:1863 Workerman[start.php] has been stopped
+2024-01-09 02:37:00 pid:1866 Workerman[start.php] start in DEBUG mode
+2024-01-09 03:01:03 pid:1866 Workerman[start.php] stopping ...
+2024-01-09 03:01:03 pid:1866 Workerman[start.php] has been stopped
+2024-01-09 03:01:03 pid:1884 Workerman[start.php] start in DEBUG mode
+2024-01-09 03:16:53 pid:1884 Workerman[start.php] stopping ...
+2024-01-09 03:16:53 pid:1884 Workerman[start.php] has been stopped
+2024-01-09 03:16:54 pid:1891 Workerman[start.php] start in DEBUG mode
+2024-01-09 03:16:56 pid:1859 Workerman[http.php] stopping ...
+2024-01-09 03:16:56 pid:1859 Workerman[http.php] has been stopped
+2024-01-09 03:16:57 pid:1893 Workerman[http.php] start in DEBUG mode
+2024-01-09 03:17:39 pid:1893 Workerman[http.php] stopping ...
+2024-01-09 03:17:39 pid:1893 Workerman[http.php] has been stopped
+2024-01-09 03:17:40 pid:1896 Workerman[http.php] start in DEBUG mode
+2024-01-09 03:20:11 pid:1896 Workerman[http.php] stopping ...
+2024-01-09 03:20:11 pid:1896 Workerman[http.php] has been stopped
+2024-01-09 03:20:12 pid:1898 Workerman[http.php] start in DEBUG mode
+2024-01-09 04:03:31 pid:1891 Workerman[start.php] stopping ...
+2024-01-09 04:03:31 pid:1891 Workerman[start.php] has been stopped
+2024-01-09 04:03:32 pid:1954 Workerman[start.php] start in DEBUG mode
+2024-01-09 04:07:30 pid:1898 Workerman[http.php] stopping ...
+2024-01-09 04:07:30 pid:1898 Workerman[http.php] has been stopped
+2024-01-09 04:07:30 pid:1957 Workerman[http.php] start in DEBUG mode
+2024-01-09 04:07:47 pid:1958 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?' at line 1 in /home/work/code/vendor/workerman/mysql/src/Connection.php:1732
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1732): PDO->prepare()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(74): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->search()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#13 {main}
+2024-01-09 04:07:47 pid:1957 worker[none:1958] exit with status 64000
+2024-01-09 04:07:47 pid:1959 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?' at line 1 in /home/work/code/vendor/workerman/mysql/src/Connection.php:1732
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1732): PDO->prepare()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(74): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->search()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#15 {main}
+2024-01-09 04:07:47 pid:1957 worker[none:1959] exit with status 64000
+2024-01-09 04:12:20 pid:1957 Workerman[http.php] stopping ...
+2024-01-09 04:12:20 pid:1957 Workerman[http.php] has been stopped
+2024-01-09 04:12:21 pid:1962 Workerman[http.php] start in DEBUG mode
+2024-01-09 04:12:24 pid:1963 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?' at line 1 in /home/work/code/vendor/workerman/mysql/src/Connection.php:1732
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1732): PDO->prepare()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(74): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->search()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#13 {main}
+2024-01-09 04:12:24 pid:1962 worker[none:1963] exit with status 64000
+2024-01-09 04:12:24 pid:1964 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?' at line 1 in /home/work/code/vendor/workerman/mysql/src/Connection.php:1732
+Stack trace:
+#0 /home/work/code/vendor/workerman/mysql/src/Connection.php(1732): PDO->prepare()
+#1 /home/work/code/vendor/workerman/mysql/src/Connection.php(1890): Workerman\MySQL\Connection->execute()
+#2 /home/work/code/app/http/controller/User.php(74): Workerman\MySQL\Connection->row()
+#3 /home/work/code/app/http/Application.php(28): User->search()
+#4 /home/work/code/http.php(27): Application->handle()
+#5 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/code/http.php(44): Workerman\Worker::runAll()
+#15 {main}
+2024-01-09 04:12:24 pid:1962 worker[none:1964] exit with status 64000
+2024-01-09 04:16:54 pid:1962 Workerman[http.php] stopping ...
+2024-01-09 04:16:54 pid:1962 Workerman[http.php] has been stopped
+2024-01-09 04:16:55 pid:1966 Workerman[http.php] start in DEBUG mode
+2024-01-09 04:17:44 pid:1966 Workerman[http.php] stopping ...
+2024-01-09 04:17:44 pid:1966 Workerman[http.php] has been stopped
+2024-01-09 04:17:45 pid:1969 Workerman[http.php] start in DEBUG mode
+2024-01-09 04:39:14 pid:1969 Workerman[http.php] stopping ...
+2024-01-09 04:39:15 pid:1969 Workerman[http.php] has been stopped
+2024-01-09 04:39:15 pid:1975 Workerman[http.php] start in DEBUG mode
+2024-01-09 04:39:53 pid:1975 Workerman[http.php] stopping ...
+2024-01-09 04:39:53 pid:1975 Workerman[http.php] has been stopped
+2024-01-09 04:39:54 pid:1977 Workerman[http.php] start in DEBUG mode
+2024-01-09 06:36:52 pid:1954 Workerman[start.php] stopping ...
+2024-01-09 06:36:52 pid:1954 Workerman[start.php] has been stopped
+2024-01-09 06:36:52 pid:2062 Workerman[start.php] start in DEBUG mode
+2024-01-09 06:41:08 pid:2062 Workerman[start.php] stopping ...
+2024-01-09 06:41:08 pid:2062 Workerman[start.php] has been stopped
+2024-01-09 06:41:08 pid:2075 Workerman[start.php] start in DEBUG mode
+2024-01-09 06:42:06 pid:2075 Workerman[start.php] stopping ...
+2024-01-09 06:42:06 pid:2075 Workerman[start.php] has been stopped
+2024-01-09 06:42:07 pid:2087 Workerman[start.php] start in DEBUG mode
+2024-01-09 06:46:46 pid:2087 Workerman[start.php] stopping ...
+2024-01-09 06:46:46 pid:2087 Workerman[start.php] has been stopped
+2024-01-09 06:46:47 pid:2100 Workerman[start.php] start in DEBUG mode
+2024-01-09 07:07:01 pid:2100 Workerman[start.php] stopping ...
+2024-01-09 07:07:01 pid:2100 Workerman[start.php] has been stopped
+2024-01-09 07:07:02 pid:2130 Workerman[start.php] start in DEBUG mode
+2024-01-09 07:29:23 pid:2130 Workerman[start.php] stopping ...
+2024-01-09 07:29:23 pid:2130 Workerman[start.php] has been stopped
+2024-01-09 07:29:23 pid:2136 Workerman[start.php] start in DEBUG mode
+2024-01-09 07:31:10 pid:1977 Workerman[http.php] stopping ...
+2024-01-09 07:31:10 pid:1977 Workerman[http.php] has been stopped
+2024-01-09 07:31:11 pid:2139 Workerman[http.php] start in DEBUG mode
+2024-01-09 07:33:55 pid:2136 Workerman[start.php] stopping ...
+2024-01-09 07:33:55 pid:2136 Workerman[start.php] has been stopped
+2024-01-09 07:33:55 pid:2141 Workerman[start.php] start in DEBUG mode
+2024-01-09 07:48:54 pid:2142 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(23): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#11 /home/work/code/start.php(63): Workerman\Worker::runAll()
+#12 {main}
+2024-01-09 07:48:54 pid:2141 worker[none:2142] exit with status 64000
+2024-01-09 07:49:24 pid:2141 Workerman[start.php] stopping ...
+2024-01-09 07:49:24 pid:2141 Workerman[start.php] has been stopped
+2024-01-09 07:49:25 pid:2147 Workerman[start.php] start in DEBUG mode
+2024-01-09 07:50:41 pid:2147 Workerman[start.php] stopping ...
+2024-01-09 07:50:41 pid:2147 Workerman[start.php] has been stopped
+2024-01-09 07:50:42 pid:2150 Workerman[start.php] start in DEBUG mode
+2024-01-09 07:54:53 pid:2150 Workerman[start.php] stopping ...
+2024-01-09 07:54:53 pid:2150 Workerman[start.php] has been stopped
+2024-01-09 07:54:54 pid:2156 Workerman[start.php] start in DEBUG mode
+2024-01-09 08:31:32 pid:2156 Workerman[start.php] stopping ...
+2024-01-09 08:31:32 pid:2156 Workerman[start.php] has been stopped
+2024-01-09 08:31:32 pid:2192 Workerman[start.php] start in DEBUG mode
+2024-01-09 08:44:36 pid:2192 Workerman[start.php] stopping ...
+2024-01-09 08:44:36 pid:2192 Workerman[start.php] has been stopped
+2024-01-09 08:44:47 pid:2197 Workerman[start.php] start in DEBUG mode
+2024-01-09 08:44:51 pid:2198 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(32): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#11 /home/work/code/start.php(73): Workerman\Worker::runAll()
+#12 {main}
+2024-01-09 08:44:51 pid:2197 worker[none:2198] exit with status 64000
+2024-01-09 08:44:55 pid:2199 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(32): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#13 /home/work/code/start.php(73): Workerman\Worker::runAll()
+#14 {main}
+2024-01-09 08:44:55 pid:2197 worker[none:2199] exit with status 64000
+2024-01-09 08:45:06 pid:2197 Workerman[start.php] stopping ...
+2024-01-09 08:45:06 pid:2197 Workerman[start.php] has been stopped
+2024-01-09 08:45:38 pid:2201 Workerman[start.php] start in DEBUG mode
+2024-01-09 08:45:38 pid:2202 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(32): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#11 /home/work/code/start.php(73): Workerman\Worker::runAll()
+#12 {main}
+2024-01-09 08:45:38 pid:2201 worker[none:2202] exit with status 64000
+2024-01-09 08:45:44 pid:2203 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(32): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#13 /home/work/code/start.php(73): Workerman\Worker::runAll()
+#14 {main}
+2024-01-09 08:45:44 pid:2201 worker[none:2203] exit with status 64000
+2024-01-09 08:48:33 pid:2201 Workerman[start.php] stopping ...
+2024-01-09 08:48:33 pid:2201 Workerman[start.php] has been stopped
+2024-01-09 08:48:34 pid:2206 Workerman[start.php] start in DEBUG mode
+2024-01-09 08:49:31 pid:2206 Workerman[start.php] stopping ...
+2024-01-09 08:49:31 pid:2206 Workerman[start.php] has been stopped
+2024-01-09 08:49:32 pid:2208 Workerman[start.php] start in DEBUG mode
+2024-01-09 08:59:46 pid:2208 Workerman[start.php] stopping ...
+2024-01-09 08:59:46 pid:2208 Workerman[start.php] has been stopped
+2024-01-09 08:59:47 pid:2212 Workerman[start.php] start in DEBUG mode
+2024-01-09 08:59:50 pid:2213 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(48): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#11 /home/work/code/start.php(91): Workerman\Worker::runAll()
+#12 {main}
+2024-01-09 08:59:50 pid:2212 worker[none:2213] exit with status 64000
+2024-01-09 08:59:52 pid:2214 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(48): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#13 /home/work/code/start.php(91): Workerman\Worker::runAll()
+#14 {main}
+2024-01-09 08:59:52 pid:2212 worker[none:2214] exit with status 64000
+2024-01-09 09:00:00 pid:2215 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start.php(48): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#11 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#13 /home/work/code/start.php(91): Workerman\Worker::runAll()
+#14 {main}
+2024-01-09 09:00:00 pid:2212 worker[none:2215] exit with status 64000
+2024-01-09 09:00:17 pid:2212 Workerman[start.php] stopping ...
+2024-01-09 09:00:17 pid:2212 Workerman[start.php] has been stopped
+2024-01-09 09:00:17 pid:2217 Workerman[start.php] start in DEBUG mode
+2024-01-09 09:02:20 pid:2217 Workerman[start.php] stopping ...
+2024-01-09 09:02:20 pid:2217 Workerman[start.php] has been stopped
+2024-01-09 09:02:20 pid:2230 Workerman[start.php] start in DEBUG mode
+2024-01-09 09:59:45 pid:2230 Workerman[start.php] stopping ...
+2024-01-09 09:59:45 pid:2230 Workerman[start.php] has been stopped
+2024-01-09 09:59:46 pid:2139 Workerman[http.php] stopping ...
+2024-01-09 09:59:46 pid:2139 Workerman[http.php] has been stopped
+2024-01-10 01:20:35 pid:1779 Workerman[http.php] start in DEBUG mode
+2024-01-10 01:20:45 pid:1787 Workerman[start.php] start in DEBUG mode
+2024-01-10 02:07:13 pid:1862 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 02:27:27 pid:1862 Workerman[start_test.php] stopping ...
+2024-01-10 02:27:27 pid:1862 Workerman[start_test.php] has been stopped
+2024-01-10 02:27:28 pid:1918 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 02:28:40 pid:1918 Workerman[start_test.php] stopping ...
+2024-01-10 02:28:40 pid:1918 Workerman[start_test.php] has been stopped
+2024-01-10 02:28:41 pid:1920 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 02:28:45 pid:1921 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start_test.php(44): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#11 /home/work/code/start_test.php(69): Workerman\Worker::runAll()
+#12 {main}
+2024-01-10 02:28:45 pid:1920 worker[none:1921] exit with status 64000
+2024-01-10 02:30:06 pid:1920 Workerman[start_test.php] stopping ...
+2024-01-10 02:30:06 pid:1920 Workerman[start_test.php] has been stopped
+2024-01-10 02:30:07 pid:1923 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 02:30:10 pid:1924 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/code/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/code/start_test.php(44): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#6 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#9 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#10 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#11 /home/work/code/start_test.php(69): Workerman\Worker::runAll()
+#12 {main}
+2024-01-10 02:30:11 pid:1923 worker[none:1924] exit with status 64000
+2024-01-10 02:35:36 pid:1923 Workerman[start_test.php] stopping ...
+2024-01-10 02:35:36 pid:1923 Workerman[start_test.php] has been stopped
+2024-01-10 02:35:37 pid:1927 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 02:35:41 pid:1928 Error: Class 'google\protobuf\BytesValue' not found in /home/work/code/start_test.php:44
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#7 /home/work/code/start_test.php(68): Workerman\Worker::runAll()
+#8 {main}
+2024-01-10 02:35:41 pid:1927 worker[none:1928] exit with status 64000
+2024-01-10 02:36:14 pid:1927 Workerman[start_test.php] stopping ...
+2024-01-10 02:36:14 pid:1927 Workerman[start_test.php] has been stopped
+2024-01-10 02:36:14 pid:1930 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 02:36:20 pid:1931 Error: Class 'google\protobuf\BytesValue' not found in /home/work/code/start_test.php:45
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#7 /home/work/code/start_test.php(69): Workerman\Worker::runAll()
+#8 {main}
+2024-01-10 02:36:20 pid:1930 worker[none:1931] exit with status 64000
+2024-01-10 02:51:30 pid:1932 Error: Class 'google\protobuf\BytesValue' not found in /home/work/code/start_test.php:45
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/start_test.php(69): Workerman\Worker::runAll()
+#10 {main}
+2024-01-10 02:51:30 pid:1930 worker[none:1932] exit with status 64000
+2024-01-10 02:51:55 pid:1930 Workerman[start_test.php] stopping ...
+2024-01-10 02:51:55 pid:1930 Workerman[start_test.php] has been stopped
+2024-01-10 02:51:55 pid:1968 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 02:52:19 pid:1968 Workerman[start_test.php] stopping ...
+2024-01-10 02:52:19 pid:1968 Workerman[start_test.php] has been stopped
+2024-01-10 02:52:19 pid:1970 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 02:52:23 pid:1971 Error: Call to undefined method Message::mergeFromStream() in /home/work/code/start_test.php:43
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#7 /home/work/code/start_test.php(68): Workerman\Worker::runAll()
+#8 {main}
+2024-01-10 02:52:23 pid:1970 worker[none:1971] exit with status 64000
+2024-01-10 02:56:35 pid:1972 Error: Call to undefined method Message::mergeFromStream() in /home/work/code/start_test.php:43
+Stack trace:
+#0 /home/work/code/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/code/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/code/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/code/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/code/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/code/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#7 /home/work/code/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#8 /home/work/code/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#9 /home/work/code/start_test.php(68): Workerman\Worker::runAll()
+#10 {main}
+2024-01-10 02:56:35 pid:1970 worker[none:1972] exit with status 64000
+2024-01-10 03:13:02 pid:1970 Workerman[start_test.php] stopping ...
+2024-01-10 03:13:02 pid:1970 Workerman[start_test.php] has been stopped
+2024-01-10 03:13:02 pid:2000 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 04:11:42 pid:2000 Workerman[start_test.php] stopping ...
+2024-01-10 04:11:42 pid:2000 Workerman[start_test.php] has been stopped
+2024-01-10 05:18:10 pid:2505 Workerman[start_test.php] start in DEBUG mode
+2024-01-10 05:18:37 pid:2505 Workerman[start_test.php] stopping ...
+2024-01-10 05:18:37 pid:2505 Workerman[start_test.php] has been stopped
+2024-01-10 06:48:52 pid:2722 Workerman[start.php] start in DEBUG mode
+2024-01-10 06:49:36 pid:2722 Workerman[start.php] stopping ...
+2024-01-10 06:49:36 pid:2722 Workerman[start.php] has been stopped
+2024-01-10 06:50:13 pid:2770 Workerman[start.php] start in DEBUG mode
+2024-01-10 06:56:37 pid:2770 Workerman[start.php] stopping ...
+2024-01-10 06:56:37 pid:2770 Workerman[start.php] has been stopped
+2024-01-10 06:56:37 pid:2773 Workerman[start.php] start in DEBUG mode
+2024-01-10 06:56:51 pid:2773 Workerman[start.php] stopping ...
+2024-01-10 06:56:51 pid:2773 Workerman[start.php] has been stopped
+2024-01-10 06:56:52 pid:2775 Workerman[start.php] start in DEBUG mode
+2024-01-10 06:57:21 pid:2776 Error: Class 'Application' not found in /home/work/protobuf-demo/start.php:39
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#1 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#2 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#3 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#4 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#6 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#7 /home/work/protobuf-demo/start.php(64): Workerman\Worker::runAll()
+#8 {main}
+2024-01-10 06:57:21 pid:2775 worker[none:2776] exit with status 64000
+2024-01-10 06:57:47 pid:2775 Workerman[start.php] stopping ...
+2024-01-10 06:57:47 pid:2775 Workerman[start.php] has been stopped
+2024-01-10 06:57:47 pid:2778 Workerman[start.php] start in DEBUG mode
+2024-01-10 06:57:51 pid:2779 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(9): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(40): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(64): Workerman\Worker::runAll()
+#13 {main}
+2024-01-10 06:57:51 pid:2778 worker[none:2779] exit with status 64000
+2024-01-10 06:59:29 pid:2778 Workerman[start.php] stopping ...
+2024-01-10 06:59:29 pid:2778 Workerman[start.php] has been stopped
+2024-01-10 06:59:29 pid:2782 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:01:23 pid:2782 Workerman[start.php] stopping ...
+2024-01-10 07:01:23 pid:2782 Workerman[start.php] has been stopped
+2024-01-10 07:01:24 pid:2797 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:01:53 pid:2797 Workerman[start.php] stopping ...
+2024-01-10 07:01:53 pid:2797 Workerman[start.php] has been stopped
+2024-01-10 07:01:54 pid:2799 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:02:13 pid:2799 Workerman[start.php] stopping ...
+2024-01-10 07:02:13 pid:2799 Workerman[start.php] has been stopped
+2024-01-10 07:02:13 pid:2801 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:02:47 pid:2801 Workerman[start.php] stopping ...
+2024-01-10 07:02:47 pid:2801 Workerman[start.php] has been stopped
+2024-01-10 07:02:48 pid:2803 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:03:02 pid:2803 Workerman[start.php] stopping ...
+2024-01-10 07:03:02 pid:2803 Workerman[start.php] has been stopped
+2024-01-10 07:03:03 pid:2805 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:03:36 pid:2805 Workerman[start.php] stopping ...
+2024-01-10 07:03:36 pid:2805 Workerman[start.php] has been stopped
+2024-01-10 07:03:37 pid:2807 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:04:05 pid:2807 Workerman[start.php] stopping ...
+2024-01-10 07:04:05 pid:2807 Workerman[start.php] has been stopped
+2024-01-10 07:04:06 pid:2809 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:04:46 pid:2809 Workerman[start.php] stopping ...
+2024-01-10 07:04:46 pid:2809 Workerman[start.php] has been stopped
+2024-01-10 07:04:46 pid:2812 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:05:13 pid:2812 Workerman[start.php] stopping ...
+2024-01-10 07:05:13 pid:2812 Workerman[start.php] has been stopped
+2024-01-10 07:05:13 pid:2814 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:05:16 pid:2815 Error: Class 'Response' not found in /home/work/protobuf-demo/app/Application.php:30
+Stack trace:
+#0 /home/work/protobuf-demo/start.php(40): Application->run()
+#1 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#3 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#4 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/protobuf-demo/start.php(64): Workerman\Worker::runAll()
+#9 {main}
+2024-01-10 07:05:16 pid:2814 worker[none:2815] exit with status 64000
+2024-01-10 07:06:01 pid:2814 Workerman[start.php] stopping ...
+2024-01-10 07:06:01 pid:2814 Workerman[start.php] has been stopped
+2024-01-10 07:06:02 pid:2817 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:06:06 pid:2818 Error: Call to a member function setExtra() on array in /home/work/protobuf-demo/app/Application.php:34
+Stack trace:
+#0 /home/work/protobuf-demo/start.php(40): Application->run()
+#1 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#3 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#4 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/protobuf-demo/start.php(64): Workerman\Worker::runAll()
+#9 {main}
+2024-01-10 07:06:06 pid:2817 worker[none:2818] exit with status 64000
+2024-01-10 07:06:44 pid:2817 Workerman[start.php] stopping ...
+2024-01-10 07:06:44 pid:2817 Workerman[start.php] has been stopped
+2024-01-10 07:06:44 pid:2820 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:07:16 pid:2820 Workerman[start.php] stopping ...
+2024-01-10 07:07:16 pid:2820 Workerman[start.php] has been stopped
+2024-01-10 07:07:16 pid:2822 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:10:34 pid:2822 Workerman[start.php] stopping ...
+2024-01-10 07:10:34 pid:2822 Workerman[start.php] has been stopped
+2024-01-10 07:10:35 pid:2849 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:12:17 pid:2849 Workerman[start.php] stopping ...
+2024-01-10 07:12:17 pid:2849 Workerman[start.php] has been stopped
+2024-01-10 07:12:17 pid:2851 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:25:04 pid:2851 Workerman[start.php] stopping ...
+2024-01-10 07:25:04 pid:2851 Workerman[start.php] has been stopped
+2024-01-10 07:25:04 pid:2855 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:25:34 pid:2855 Workerman[start.php] stopping ...
+2024-01-10 07:25:34 pid:2855 Workerman[start.php] has been stopped
+2024-01-10 07:25:35 pid:2857 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:26:49 pid:2857 Workerman[start.php] stopping ...
+2024-01-10 07:26:49 pid:2857 Workerman[start.php] has been stopped
+2024-01-10 07:26:49 pid:2860 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:27:11 pid:2860 Workerman[start.php] stopping ...
+2024-01-10 07:27:11 pid:2860 Workerman[start.php] has been stopped
+2024-01-10 07:27:11 pid:2862 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:27:55 pid:2862 Workerman[start.php] stopping ...
+2024-01-10 07:27:55 pid:2862 Workerman[start.php] has been stopped
+2024-01-10 07:27:56 pid:2864 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:29:50 pid:2864 Workerman[start.php] stopping ...
+2024-01-10 07:29:50 pid:2864 Workerman[start.php] has been stopped
+2024-01-10 07:29:51 pid:2866 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:40:23 pid:2866 Workerman[start.php] stopping ...
+2024-01-10 07:40:23 pid:2866 Workerman[start.php] has been stopped
+2024-01-10 07:40:23 pid:2870 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:46:12 pid:2870 Workerman[start.php] stopping ...
+2024-01-10 07:46:12 pid:2870 Workerman[start.php] has been stopped
+2024-01-10 07:46:12 pid:2873 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:46:36 pid:2873 Workerman[start.php] stopping ...
+2024-01-10 07:46:36 pid:2873 Workerman[start.php] has been stopped
+2024-01-10 07:46:36 pid:2875 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:51:14 pid:2875 Workerman[start.php] stopping ...
+2024-01-10 07:51:14 pid:2875 Workerman[start.php] has been stopped
+2024-01-10 07:51:15 pid:2878 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:53:59 pid:2878 Workerman[start.php] stopping ...
+2024-01-10 07:53:59 pid:2878 Workerman[start.php] has been stopped
+2024-01-10 07:54:00 pid:2881 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:54:18 pid:2881 Workerman[start.php] stopping ...
+2024-01-10 07:54:18 pid:2881 Workerman[start.php] has been stopped
+2024-01-10 07:54:18 pid:2883 Workerman[start.php] start in DEBUG mode
+2024-01-10 07:54:38 pid:2883 Workerman[start.php] stopping ...
+2024-01-10 07:54:38 pid:2883 Workerman[start.php] has been stopped
+2024-01-10 07:54:38 pid:2885 Workerman[start.php] start in DEBUG mode
+2024-01-10 08:29:21 pid:2885 Workerman[start.php] stopping ...
+2024-01-10 08:29:21 pid:2885 Workerman[start.php] has been stopped

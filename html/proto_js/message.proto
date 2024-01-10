@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message Message {
+	required string user_code = 1;
+	required string user_name = 2;
+	required string content = 3;
+	required string to_user = 4;
+}
