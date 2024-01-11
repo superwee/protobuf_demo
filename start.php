@@ -27,7 +27,7 @@ $worker->onMessage = function(TcpConnection $connection, $req_data)
 	$data = explode("\r\n", $req_data);
 	$app = new Application();
 	// $response = $app->run(current($data));
-	$response = $app->run($data[0]);
+	$response = $app->run(base64_decode($data[0]));
 	var_dump('output:'.$response);
     $connection->send(base64_encode($response));
 };

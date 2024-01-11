@@ -9,8 +9,6 @@ class Application
 		#请求消息体处理
 		var_dump('app:'.$req_data);
 		$request = new Request();
-		// $requst = Request::parseFrom($req_data);
-		// $request->parseFromStream($req_data);
 		$request->mergeFromString($req_data);
 		$data = $request->serializeToJsonString();
 		var_dump($data);

@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 	function sendMessage(data)
 	{
-		ws.send(data);
+		ws.send(data + "\r\n");
 	}
 
 	function load_proto($file)
@@ -51,7 +51,7 @@ $(document).ready(function(){
 		var request = new Request({path:path, body:body});
 		console.log('request:');
 		console.log(request);
-		return request.toArrayBuffer();
+		return request.encode().toString('base64');
 	}
 
 	//解析消息
@@ -74,6 +74,8 @@ $(document).ready(function(){
 		console.log(message);
 		var path = 'test/index';
 		var request = buildRequest(path, message.toArrayBuffer());
+		console.log(request.toString('base64'));
+		// return;
 		//regist callback
 		callback_list[path] = function (data){
 			console.log('callback');

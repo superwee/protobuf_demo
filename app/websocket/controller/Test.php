@@ -8,7 +8,7 @@ class Test extends BaseController
 		$message = new Message();
 		$message->mergeFromString($body);
 		$data = $message->serializeToJsonString();
-
+		var_dump($data);
 		//todo
 
 		//response
