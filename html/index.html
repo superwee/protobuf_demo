@@ -20,6 +20,7 @@ $(document).ready(function(){
 	var ProtoBuf = dcodeIO.ProtoBuf;
 	var url = 'ws://192.168.13.128:1235';
 	var ws = new WebSocket(url);
+	var callback_list = {};
 	ws.onopen = function () {
 		console.log('connect success');
 	};
@@ -32,22 +33,24 @@ $(document).ready(function(){
 	ws.onclose = function () {
 		console.log('disconnect');
 	};
+
+	function sendMessage(data)
+	{
+		ws.send(data);
+	}
+
 	function load_proto($file)
 	{
-		return ProtoBuf.loadProtoFile($file);
+		return ProtoBuf.loadProtoFile("./proto_js/" + $file + ".proto");
 	}
 
-	function buildMessage(content)
+	//构建请求消息体
+	function buildRequest(path, body)
 	{
-		var Message = load_proto('./proto_js/message.proto').build('Message');
-		var message = new Message({user_code:'test',user_name:'test',content:content,to_user:'test1'});
-		return message.toArrayBuffer();
-	}
-
-	function buildRequest(body)
-	{
-		var Request = load_proto('./proto_js/request.proto').build('Request');
-		var request = new Request({path:'test/index', body:body});
+		var Request = load_proto('request').build('Request');
+		var request = new Request({path:path, body:body});
+		console.log('request:');
+		console.log(request);
 		return request.toArrayBuffer();
 	}
 
@@ -55,17 +58,32 @@ $(document).ready(function(){
 	function decodeMessage(evt)
 	{
 		var data = evt.data;
-		var Response = load_proto('./proto_js/response.proto').build('Response');
+		var Response = load_proto('response').build('Response');
 		var response = Response.decode(data);
+		console.log('response:');
 		console.log(response);
+		callback_list[response.path](response.body);
 	}
 
 	//发送消息
 	$('#send').on('click', function () {
 		var content = $('#content').val();
-		var message = buildMessage(content);
-		var request = buildRequest(message);
-		ws.send(request);
+		var Message = load_proto('message').build('Message');
+		var message = new Message({user_code:'test',user_name:'test',content:content,to_user:'test1'});
+		console.log('message:');
+		console.log(message);
+		var path = 'test/index';
+		var request = buildRequest(path, message.toArrayBuffer());
+		//regist callback
+		callback_list[path] = function (data){
+			console.log('callback');
+			console.log(data);
+			let MessageResponse = load_proto('message').build('MessageResponse');
+			let message_res = MessageResponse.decode(data);
+			console.log(message_res);
+		};
+		// sendMessage(request.toString('base64'));
+		sendMessage(request);
 	});
 
 });

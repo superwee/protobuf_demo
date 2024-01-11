@@ -12,17 +12,13 @@ use Google\Protobuf\Internal\GPBUtil;
 class Response extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>int32 code = 1;</code>
+     * Generated from protobuf field <code>string path = 1;</code>
      */
-    private $code = 0;
+    private $path = '';
     /**
-     * Generated from protobuf field <code>string data = 2;</code>
+     * Generated from protobuf field <code>bytes body = 2;</code>
      */
-    private $data = '';
-    /**
-     * Generated from protobuf field <code>string extra = 3;</code>
-     */
-    private $extra = '';
+    private $body = '';
 
     public function __construct() {
         \GPBMetadata\Response::initOnce();
@@ -30,67 +26,45 @@ class Response extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 code = 1;</code>
-     * @return int
+     * Generated from protobuf field <code>string path = 1;</code>
+     * @return string
      */
-    public function getCode()
+    public function getPath()
     {
-        return $this->code;
+        return $this->path;
     }
 
     /**
-     * Generated from protobuf field <code>int32 code = 1;</code>
-     * @param int $var
+     * Generated from protobuf field <code>string path = 1;</code>
+     * @param string $var
      * @return $this
      */
-    public function setCode($var)
+    public function setPath($var)
     {
-        GPBUtil::checkInt32($var);
-        $this->code = $var;
+        GPBUtil::checkString($var, True);
+        $this->path = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string data = 2;</code>
+     * Generated from protobuf field <code>bytes body = 2;</code>
      * @return string
      */
-    public function getData()
+    public function getBody()
     {
-        return $this->data;
+        return $this->body;
     }
 
     /**
-     * Generated from protobuf field <code>string data = 2;</code>
+     * Generated from protobuf field <code>bytes body = 2;</code>
      * @param string $var
      * @return $this
      */
-    public function setData($var)
+    public function setBody($var)
     {
-        GPBUtil::checkString($var, True);
-        $this->data = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string extra = 3;</code>
-     * @return string
-     */
-    public function getExtra()
-    {
-        return $this->extra;
-    }
-
-    /**
-     * Generated from protobuf field <code>string extra = 3;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setExtra($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->extra = $var;
+        GPBUtil::checkString($var, False);
+        $this->body = $var;
 
         return $this;
     }

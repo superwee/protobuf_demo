@@ -6,3 +6,8 @@ message Message {
 	string content = 3;
 	string to_user = 4;
 }
+
+message MessageResponse {
+	int32 code = 1;
+	string msg = 2;
+}

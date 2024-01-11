@@ -1877,3 +1877,553 @@ Stack trace:
 2024-01-10 07:54:38 pid:2885 Workerman[start.php] start in DEBUG mode
 2024-01-10 08:29:21 pid:2885 Workerman[start.php] stopping ...
 2024-01-10 08:29:21 pid:2885 Workerman[start.php] has been stopped
+2024-01-11 01:49:34 pid:1820 Workerman[start.php] start in DEBUG mode
+2024-01-11 01:52:01 pid:1821 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(29): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(54): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 01:52:01 pid:1820 worker[none:1821] exit with status 64000
+2024-01-11 01:52:52 pid:1823 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(29): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(54): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 01:52:52 pid:1820 worker[none:1823] exit with status 64000
+2024-01-11 01:53:34 pid:1824 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(29): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(54): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 01:53:34 pid:1820 worker[none:1824] exit with status 64000
+2024-01-11 01:54:19 pid:1825 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(29): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(54): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 01:54:19 pid:1820 worker[none:1825] exit with status 64000
+2024-01-11 01:55:08 pid:1826 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(29): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(54): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 01:55:08 pid:1820 worker[none:1826] exit with status 64000
+2024-01-11 01:56:50 pid:1827 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(29): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(54): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 01:56:50 pid:1820 worker[none:1827] exit with status 64000
+2024-01-11 01:57:22 pid:1829 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(29): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(54): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 01:57:22 pid:1820 worker[none:1829] exit with status 64000
+2024-01-11 02:03:44 pid:1830 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(29): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(54): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 02:03:44 pid:1820 worker[none:1830] exit with status 64000
+2024-01-11 02:04:19 pid:1820 Workerman[start.php] stopping ...
+2024-01-11 02:04:19 pid:1820 Workerman[start.php] has been stopped
+2024-01-11 02:04:20 pid:1855 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:06:00 pid:1855 Workerman[start.php] stopping ...
+2024-01-11 02:06:00 pid:1855 Workerman[start.php] has been stopped
+2024-01-11 02:06:00 pid:1857 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:10:35 pid:1857 Workerman[start.php] stopping ...
+2024-01-11 02:10:35 pid:1857 Workerman[start.php] has been stopped
+2024-01-11 02:10:35 pid:1860 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:14:30 pid:1860 Workerman[start.php] stopping ...
+2024-01-11 02:14:30 pid:1860 Workerman[start.php] has been stopped
+2024-01-11 02:14:31 pid:1863 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:14:34 pid:1864 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(30): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(55): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:14:34 pid:1863 worker[none:1864] exit with status 64000
+2024-01-11 02:15:31 pid:1863 Workerman[start.php] stopping ...
+2024-01-11 02:15:31 pid:1863 Workerman[start.php] has been stopped
+2024-01-11 02:15:32 pid:1866 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:15:36 pid:1867 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:15:36 pid:1866 worker[none:1867] exit with status 64000
+2024-01-11 02:16:20 pid:1868 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 02:16:20 pid:1866 worker[none:1868] exit with status 64000
+2024-01-11 02:18:09 pid:1869 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:333
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 02:18:09 pid:1866 worker[none:1869] exit with status 64000
+2024-01-11 02:18:37 pid:1866 Workerman[start.php] stopping ...
+2024-01-11 02:18:37 pid:1866 Workerman[start.php] has been stopped
+2024-01-11 02:18:38 pid:1872 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:18:42 pid:1873 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:18:42 pid:1872 worker[none:1873] exit with status 64000
+2024-01-11 02:19:46 pid:1874 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 02:19:46 pid:1872 worker[none:1874] exit with status 64000
+2024-01-11 02:22:13 pid:1875 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#14 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#15 {main}
+2024-01-11 02:22:13 pid:1872 worker[none:1875] exit with status 64000
+2024-01-11 02:24:39 pid:1872 Workerman[start.php] stopping ...
+2024-01-11 02:24:39 pid:1872 Workerman[start.php] has been stopped
+2024-01-11 02:24:39 pid:1878 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:25:06 pid:1878 Workerman[start.php] stopping ...
+2024-01-11 02:25:06 pid:1878 Workerman[start.php] has been stopped
+2024-01-11 02:25:07 pid:1880 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:25:10 pid:1881 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:25:10 pid:1880 worker[none:1881] exit with status 64000
+2024-01-11 02:28:20 pid:1880 Workerman[start.php] stopping ...
+2024-01-11 02:28:20 pid:1880 Workerman[start.php] has been stopped
+2024-01-11 02:28:20 pid:1883 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:28:24 pid:1884 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:28:24 pid:1883 worker[none:1884] exit with status 64000
+2024-01-11 02:30:35 pid:1883 Workerman[start.php] stopping ...
+2024-01-11 02:30:35 pid:1883 Workerman[start.php] has been stopped
+2024-01-11 02:30:36 pid:1887 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:30:40 pid:1888 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:30:40 pid:1887 worker[none:1888] exit with status 64000
+2024-01-11 02:30:53 pid:1887 Workerman[start.php] stopping ...
+2024-01-11 02:30:53 pid:1887 Workerman[start.php] has been stopped
+2024-01-11 02:30:54 pid:1890 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:30:57 pid:1891 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:30:57 pid:1890 worker[none:1891] exit with status 64000
+2024-01-11 02:31:18 pid:1890 Workerman[start.php] stopping ...
+2024-01-11 02:31:18 pid:1890 Workerman[start.php] has been stopped
+2024-01-11 02:31:19 pid:1893 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:31:22 pid:1894 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(11): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(31): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(56): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:31:22 pid:1893 worker[none:1894] exit with status 64000
+2024-01-11 02:33:14 pid:1893 Workerman[start.php] stopping ...
+2024-01-11 02:33:14 pid:1893 Workerman[start.php] has been stopped
+2024-01-11 02:33:15 pid:1896 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:33:53 pid:1896 Workerman[start.php] stopping ...
+2024-01-11 02:33:53 pid:1896 Workerman[start.php] has been stopped
+2024-01-11 02:33:54 pid:1898 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:35:16 pid:1898 Workerman[start.php] stopping ...
+2024-01-11 02:35:16 pid:1898 Workerman[start.php] has been stopped
+2024-01-11 02:35:17 pid:1901 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:35:43 pid:1901 Workerman[start.php] stopping ...
+2024-01-11 02:35:43 pid:1901 Workerman[start.php] has been stopped
+2024-01-11 02:35:43 pid:1903 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:38:10 pid:1903 Workerman[start.php] stopping ...
+2024-01-11 02:38:10 pid:1903 Workerman[start.php] has been stopped
+2024-01-11 02:38:10 pid:1905 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:38:21 pid:1905 Workerman[start.php] stopping ...
+2024-01-11 02:38:21 pid:1905 Workerman[start.php] has been stopped
+2024-01-11 02:38:21 pid:1907 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:38:26 pid:1908 Error: Call to undefined method Request::parseFrom() in /home/work/protobuf-demo/app/Application.php:10
+Stack trace:
+#0 /home/work/protobuf-demo/start.php(30): Application->run()
+#1 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#3 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#4 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/protobuf-demo/start.php(55): Workerman\Worker::runAll()
+#9 {main}
+2024-01-11 02:38:26 pid:1907 worker[none:1908] exit with status 64000
+2024-01-11 02:39:06 pid:1909 Error: Call to undefined method Request::parseFrom() in /home/work/protobuf-demo/app/Application.php:10
+Stack trace:
+#0 /home/work/protobuf-demo/start.php(30): Application->run()
+#1 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#3 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#4 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#10 /home/work/protobuf-demo/start.php(55): Workerman\Worker::runAll()
+#11 {main}
+2024-01-11 02:39:06 pid:1907 worker[none:1909] exit with status 64000
+2024-01-11 02:45:42 pid:1907 Workerman[start.php] stopping ...
+2024-01-11 02:45:42 pid:1907 Workerman[start.php] has been stopped
+2024-01-11 02:45:43 pid:1913 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:45:48 pid:1914 Error: Call to undefined method Request::parseFrom() in /home/work/protobuf-demo/app/Application.php:13
+Stack trace:
+#0 /home/work/protobuf-demo/start.php(30): Application->run()
+#1 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#3 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#4 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/protobuf-demo/start.php(55): Workerman\Worker::runAll()
+#9 {main}
+2024-01-11 02:45:48 pid:1913 worker[none:1914] exit with status 64000
+2024-01-11 02:46:05 pid:1913 Workerman[start.php] stopping ...
+2024-01-11 02:46:05 pid:1913 Workerman[start.php] has been stopped
+2024-01-11 02:46:05 pid:1916 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:46:09 pid:1917 Error: Call to a member function readTag() on string in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:781
+Stack trace:
+#0 /home/work/protobuf-demo/app/Application.php(13): Google\Protobuf\Internal\Message->parseFromStream()
+#1 /home/work/protobuf-demo/start.php(30): Application->run()
+#2 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#4 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#6 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#9 /home/work/protobuf-demo/start.php(55): Workerman\Worker::runAll()
+#10 {main}
+2024-01-11 02:46:09 pid:1916 worker[none:1917] exit with status 64000
+2024-01-11 02:46:36 pid:1918 Error: Call to a member function readTag() on string in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:781
+Stack trace:
+#0 /home/work/protobuf-demo/app/Application.php(13): Google\Protobuf\Internal\Message->parseFromStream()
+#1 /home/work/protobuf-demo/start.php(30): Application->run()
+#2 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#4 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#6 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1785): Workerman\Worker::forkWorkers()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1721): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(562): Workerman\Worker::monitorWorkers()
+#11 /home/work/protobuf-demo/start.php(55): Workerman\Worker::runAll()
+#12 {main}
+2024-01-11 02:46:36 pid:1916 worker[none:1918] exit with status 64000
+2024-01-11 02:46:55 pid:1916 Workerman[start.php] stopping ...
+2024-01-11 02:46:55 pid:1916 Workerman[start.php] has been stopped
+2024-01-11 02:46:55 pid:1920 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:46:59 pid:1921 Error: Call to a member function mergeFromString() on null in /home/work/protobuf-demo/app/Application.php:14
+Stack trace:
+#0 /home/work/protobuf-demo/start.php(30): Application->run()
+#1 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#3 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#4 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#6 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#8 /home/work/protobuf-demo/start.php(55): Workerman\Worker::runAll()
+#9 {main}
+2024-01-11 02:46:59 pid:1920 worker[none:1921] exit with status 64000
+2024-01-11 02:47:41 pid:1920 Workerman[start.php] stopping ...
+2024-01-11 02:47:41 pid:1920 Workerman[start.php] has been stopped
+2024-01-11 02:47:42 pid:1923 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:47:45 pid:1924 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(14): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(30): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(55): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:47:45 pid:1923 worker[none:1924] exit with status 64000
+2024-01-11 02:48:27 pid:1923 Workerman[start.php] stopping ...
+2024-01-11 02:48:27 pid:1923 Workerman[start.php] has been stopped
+2024-01-11 02:48:28 pid:1926 Workerman[start.php] start in DEBUG mode
+2024-01-11 02:48:32 pid:1927 Google\Protobuf\Internal\GPBDecodeException: Error occurred during parsing: Unexpected wire type. in /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php:331
+Stack trace:
+#0 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(490): Google\Protobuf\Internal\Message->skipField()
+#1 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(790): Google\Protobuf\Internal\Message->parseFieldFromStream()
+#2 /home/work/protobuf-demo/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php(753): Google\Protobuf\Internal\Message->parseFromStream()
+#3 /home/work/protobuf-demo/app/Application.php(14): Google\Protobuf\Internal\Message->mergeFromString()
+#4 /home/work/protobuf-demo/start.php(30): Application->run()
+#5 /home/work/protobuf-demo/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}()
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#7 /home/work/protobuf-demo/vendor/workerman/workerman/Events/Event.php(193): EventBase->loop()
+#8 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1635): Workerman\Events\Event->loop()
+#9 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkOneWorkerForLinux()
+#10 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(1400): Workerman\Worker::forkWorkersForLinux()
+#11 /home/work/protobuf-demo/vendor/workerman/workerman/Worker.php(560): Workerman\Worker::forkWorkers()
+#12 /home/work/protobuf-demo/start.php(55): Workerman\Worker::runAll()
+#13 {main}
+2024-01-11 02:48:32 pid:1926 worker[none:1927] exit with status 64000

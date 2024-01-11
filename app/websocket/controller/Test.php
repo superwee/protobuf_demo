@@ -9,6 +9,13 @@ class Test extends BaseController
 		$message->mergeFromString($body);
 		$data = $message->serializeToJsonString();
 
-		return ['code' => 100, 'data' => json_decode($data, true)];
+		//todo
+
+		//response
+		$res = new MessageResponse();
+		$res->setCode(100);
+		$res->setMsg('success');
+
+		return $res->serializeToString();
 	}
 }

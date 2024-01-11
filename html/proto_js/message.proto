@@ -6,3 +6,8 @@ message Message {
 	required string content = 3;
 	required string to_user = 4;
 }
+
+message MessageResponse {
+	required int32 code = 1;
+	required string msg = 2;
+}
