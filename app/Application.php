@@ -1,6 +1,6 @@
 <?php
 require_once DIR_PATH . '/protobuf/ProtoCode/autoload.php';
-require_once DIR_PATH . '/app/websocket/controller_load.php';
+require_once CONTROLLER_DIR . '/controller_load.php';
 use Google\Protobuf\Internal\Message; 
 
 class Application

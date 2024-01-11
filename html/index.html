@@ -34,9 +34,10 @@ $(document).ready(function(){
 		console.log('disconnect');
 	};
 
-	function sendMessage(data)
+	function sendMessage(path, data)
 	{
-		ws.send(data + "\r\n");
+		var request = buildRequest(path, data);
+		ws.send(request + "\r\n");
 	}
 
 	function load_proto($file)
@@ -73,9 +74,7 @@ $(document).ready(function(){
 		console.log('message:');
 		console.log(message);
 		var path = 'test/index';
-		var request = buildRequest(path, message.toArrayBuffer());
-		console.log(request.toString('base64'));
-		// return;
+		
 		//regist callback
 		callback_list[path] = function (data){
 			console.log('callback');
@@ -84,8 +83,7 @@ $(document).ready(function(){
 			let message_res = MessageResponse.decode(data);
 			console.log(message_res);
 		};
-		// sendMessage(request.toString('base64'));
-		sendMessage(request);
+		sendMessage(path, message.toArrayBuffer());
 	});
 
 });

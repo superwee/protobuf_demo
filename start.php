@@ -3,6 +3,8 @@
 use Workerman\Worker;
 use Workerman\Connection\TcpConnection;
 define('DIR_PATH',  __DIR__);
+define('APP_DIR', __DIR__ . '/app');
+define('CONTROLLER_DIR',  __DIR__ . '/app/websocket/');
 
 require_once DIR_PATH . '/vendor/autoload.php';
 require_once DIR_PATH . '/app/Application.php';
