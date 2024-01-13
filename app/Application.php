@@ -16,6 +16,7 @@ class Application
 		$path = $data['path'] ?? '';
 		$body = $data['body'] ?? '';
 		if (empty ($path)) {
+			//todo
 			return false;
 		}
 
@@ -23,12 +24,19 @@ class Application
 		$class_name = ucwords($path_arr[0]);
 		$method_name = $path_arr[1];
 		if (!class_exists($class_name) || !method_exists($class_name, $method_name)) {
+			//todo
 			return 404;
 		}
 
 		$response_data = call_user_func_array([$class_name, $method_name], [base64_decode($body)]);
 		var_dump('response:' . $response_data);
 		#返回消息体处理
+		$response = this->buildResponseMessage($path, $response_data);
+		return $response;
+	}
+
+	private function buildResponseMessage($path, $response_data)
+	{
 		$response = new Response();
 		$response->setPath($path);
 		$response->setBody($response_data);
