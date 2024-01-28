@@ -30,7 +30,7 @@ class Application
 		$response_data = call_user_func_array([$class_name, $method_name], [base64_decode($body)]);
 		var_dump('response:' . $response_data);
 		#返回消息体处理
-		$response = this->buildResponseMessage($path, $response_data);
+		$response = $this->buildResponseMessage($path, $response_data);
 		return $response;
 	}
 
